@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04115E741F770ADC003564C6 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04115E731F770ADC003564C6 /* CreateAccountVC.swift */; };
 		04A79D751F76A9200094DF42 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A79D741F76A91C0094DF42 /* SWRevealViewController.m */; };
 		04A79D7A1F76AB300094DF42 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A79D791F76AB300094DF42 /* ChatVC.swift */; };
 		04A79D7C1F76AB410094DF42 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A79D7B1F76AB410094DF42 /* ChannelVC.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04115E731F770ADC003564C6 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		04A79D721F76A91B0094DF42 /* smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		04A79D731F76A91C0094DF42 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		04A79D741F76A91C0094DF42 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				04A79D791F76AB300094DF42 /* ChatVC.swift */,
 				04A79D7B1F76AB410094DF42 /* ChannelVC.swift */,
 				04A79D841F76C0F50094DF42 /* LoginVC.swift */,
+				04115E731F770ADC003564C6 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				04A79D7C1F76AB410094DF42 /* ChannelVC.swift in Sources */,
 				04A79D7A1F76AB300094DF42 /* ChatVC.swift in Sources */,
+				04115E741F770ADC003564C6 /* CreateAccountVC.swift in Sources */,
 				04A79D851F76C0F50094DF42 /* LoginVC.swift in Sources */,
 				04A79D7E1F76B1590094DF42 /* GradientView.swift in Sources */,
 				04C6D49D1F76A566007E716E /* AppDelegate.swift in Sources */,
