@@ -46,7 +46,7 @@ class AuthService {
         let lowerCaseEmail = email.lowercased()
         
         let header = [
-            "Content-Type": "application/jason; charset=utf-8"
+            "Content-Type": "application/json; charset=utf-8"
         ]
         
         let body: [String: Any] = [
@@ -60,6 +60,7 @@ class AuthService {
             } else {
                 completion(false)
                 debugPrint(response.result.error as Any)
+                print("KURWA")
             }
         }
         
