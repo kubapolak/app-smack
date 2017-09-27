@@ -291,7 +291,14 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="K4A-zK-JwY" eventType="touchUpInside" id="ECD-N0-PWh"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="KV8-hV-WLr">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.032220665269999997" green="0.34770928130000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -301,14 +308,19 @@
                             <constraint firstItem="Fgz-jT-ocz" firstAttribute="top" secondItem="Krv-aF-iW5" secondAttribute="bottom" constant="40" id="ATf-2v-Bna"/>
                             <constraint firstItem="Krv-aF-iW5" firstAttribute="centerX" secondItem="BEj-7q-Klz" secondAttribute="centerX" id="C41-dc-n58"/>
                             <constraint firstItem="ORB-Vt-ahj" firstAttribute="centerX" secondItem="BEj-7q-Klz" secondAttribute="centerX" id="SyU-wY-Pr4"/>
+                            <constraint firstItem="KV8-hV-WLr" firstAttribute="centerX" secondItem="BEj-7q-Klz" secondAttribute="centerX" id="U1n-NV-gxS"/>
                             <constraint firstItem="AIG-YY-P2L" firstAttribute="trailing" secondItem="g5D-wD-i4c" secondAttribute="trailing" constant="20" id="aMr-ST-tfD"/>
                             <constraint firstItem="ORB-Vt-ahj" firstAttribute="top" secondItem="Fgz-jT-ocz" secondAttribute="bottom" constant="40" id="baT-bN-wYA"/>
+                            <constraint firstItem="KV8-hV-WLr" firstAttribute="centerY" secondItem="BEj-7q-Klz" secondAttribute="centerY" constant="-100" id="mjs-n1-Z6E"/>
                             <constraint firstItem="Krv-aF-iW5" firstAttribute="top" secondItem="AIG-YY-P2L" secondAttribute="top" constant="60" id="r1z-XU-isd"/>
                             <constraint firstItem="17q-Kp-izZ" firstAttribute="top" secondItem="ORB-Vt-ahj" secondAttribute="bottom" id="rod-lv-TOB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AIG-YY-P2L"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="KtF-UF-Egs" id="OiU-6w-68P"/>
+                        <outlet property="spinner" destination="KV8-hV-WLr" id="qJN-oC-hns"/>
+                        <outlet property="userNameTxt" destination="Nrv-lH-WpU" id="bEo-Ih-v0R"/>
                         <segue destination="KL6-23-myH" kind="show" identifier="toCreateAccount" id="Wtf-2P-6H5"/>
                     </connections>
                 </viewController>
