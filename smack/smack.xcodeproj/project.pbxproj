@@ -13,6 +13,7 @@
 		0499A7661F7D521A00862B83 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A7651F7D521A00862B83 /* ChannelCell.swift */; };
 		0499A7691F7D580B00862B83 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A7671F7D580B00862B83 /* AddChannelVC.swift */; };
 		0499A76A1F7D580B00862B83 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0499A7681F7D580B00862B83 /* AddChannelVC.xib */; };
+		0499A76C1F7D5E5700862B83 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A76B1F7D5E5700862B83 /* SocketService.swift */; };
 		04A79D751F76A9200094DF42 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A79D741F76A91C0094DF42 /* SWRevealViewController.m */; };
 		04A79D7A1F76AB300094DF42 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A79D791F76AB300094DF42 /* ChatVC.swift */; };
 		04A79D7C1F76AB410094DF42 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A79D7B1F76AB410094DF42 /* ChannelVC.swift */; };
@@ -41,6 +42,7 @@
 		0499A7651F7D521A00862B83 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		0499A7671F7D580B00862B83 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		0499A7681F7D580B00862B83 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		0499A76B1F7D5E5700862B83 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		04A79D721F76A91B0094DF42 /* smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		04A79D731F76A91C0094DF42 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		04A79D741F76A91C0094DF42 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				04EAD5551F79724F00F18343 /* AuthService.swift */,
 				04AF816D1F7AA6AC002483A5 /* UserDataService.swift */,
 				0499A7611F7D49DC00862B83 /* MessageService.swift */,
+				0499A76B1F7D5E5700862B83 /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0499A76C1F7D5E5700862B83 /* SocketService.swift in Sources */,
 				04C924771F7BFC1200760D4B /* ProfileVC.swift in Sources */,
 				0499A7661F7D521A00862B83 /* ChannelCell.swift in Sources */,
 				04A79D7C1F76AB410094DF42 /* ChannelVC.swift in Sources */,
