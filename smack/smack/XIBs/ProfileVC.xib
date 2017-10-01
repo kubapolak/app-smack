@@ -82,6 +82,14 @@
                                 <action selector="logOutPressed:" destination="-1" eventType="touchUpInside" id="Xfv-g0-hMh"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6k-P3-A1h">
+                            <rect key="frame" x="106" y="273" width="123" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="change username"/>
+                            <connections>
+                                <action selector="changeNameBtnPressed:" destination="-1" eventType="touchUpInside" id="n1w-UH-yaQ"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>

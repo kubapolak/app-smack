@@ -73,5 +73,9 @@ class UserDataService {
         
         MessageService.instance.clearChannels()
         MessageService.instance.clearMessages()
-    }    
+    }
+    
+    func refreshUserName(newName: String) {
+        name = newName
+    }
 }
