@@ -31,12 +31,6 @@ class ChangeNameVC: UIViewController {
         guard let newName = newNameTxt.text , newNameTxt.text != "" else { return }
         AuthService.instance.updateUserName(newName: newName) { (success) in
             if success {
-                let id = UserDataService.instance.id
-                let color = UserDataService.instance.avatarColor
-                let avatarName = UserDataService.instance.avatarName
-                let email = UserDataService.instance.email
-
-                UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: newName)
                 UserDataService.instance.refreshUserName(newName: newName)
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
                 self.dismiss(animated: true, completion: nil)
@@ -48,6 +42,8 @@ class ChangeNameVC: UIViewController {
     
     func setupView() {
         currentNameLbl.text = UserDataService.instance.name
+        
+        newNameTxt.attributedPlaceholder = NSAttributedString(string: "new name", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceHolder])
         
         let closeTouch = UITapGestureRecognizer(target: self, action: #selector(ProfileVC.closeTap(_:)))
         bgView.addGestureRecognizer(closeTouch)
